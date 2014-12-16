@@ -67,6 +67,9 @@ class ViewController: UIViewController {
     func roundTipPercentage() -> Float {
         var roundedTipDelta :Float = Float(getSatisfactionLevel()*2)
         var tipPercentage = roundedTipDelta + tipPercentageSlider.minimumValue
+        if roundedTipDelta == 0 {
+            tipPercentage = 0
+        }
         tipPercentageSlider.value = tipPercentage
         return tipPercentage / 100
     }
@@ -87,7 +90,7 @@ class ViewController: UIViewController {
     }
     
     func placeEmoji(){
-        var satisfactionFaces = ["\u{1F621}","\u{1F620}","\u{1F611}","\u{1F604}","\u{1F60A}","\u{1F607}"]
+        var satisfactionFaces = ["\u{1F4A9}","\u{1F621}","\u{1F620}","\u{1F611}","\u{1F604}","\u{1F60A}","\u{1F607}"]
         var emojiY = tipPercentageSlider.frame.origin.y - tipPercentageSlider.frame.size.height/2 - emojiField.frame.size.height/2
         var emojiX = getCenterOfThumbForSlider(tipPercentageSlider) - 15 //For some reason, these numbers seem to be off by about 15 px
         emojiField.frame.origin.x = emojiX
