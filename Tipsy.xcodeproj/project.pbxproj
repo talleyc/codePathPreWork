@@ -13,6 +13,12 @@
 		5B2175FE1A3E5498000516C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B2175FD1A3E5498000516C9 /* Images.xcassets */; };
 		5B2176011A3E5498000516C9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B2175FF1A3E5498000516C9 /* LaunchScreen.xib */; };
 		5B21760D1A3E5498000516C9 /* TipsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B21760C1A3E5498000516C9 /* TipsyTests.swift */; };
+		5B21761C1A4000E3000516C9 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2176161A4000E3000516C9 /* Icon-60.png */; };
+		5B21761D1A4000E3000516C9 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2176171A4000E3000516C9 /* Icon-72.png */; };
+		5B21761E1A4000E3000516C9 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2176181A4000E3000516C9 /* Icon-72@2x.png */; };
+		5B21761F1A4000E3000516C9 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2176191A4000E3000516C9 /* Icon-Small-50.png */; };
+		5B2176201A4000E3000516C9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B21761A1A4000E3000516C9 /* Icon-Small-50@2x.png */; };
+		5B2176211A4000E3000516C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B21761B1A4000E3000516C9 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		5B2176061A3E5498000516C9 /* TipsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B21760B1A3E5498000516C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B21760C1A3E5498000516C9 /* TipsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyTests.swift; sourceTree = "<group>"; };
+		5B2176161A4000E3000516C9 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		5B2176171A4000E3000516C9 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		5B2176181A4000E3000516C9 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		5B2176191A4000E3000516C9 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		5B21761A1A4000E3000516C9 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		5B21761B1A4000E3000516C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,12 @@
 		5B2175F41A3E5498000516C9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B2176161A4000E3000516C9 /* Icon-60.png */,
+				5B2176171A4000E3000516C9 /* Icon-72.png */,
+				5B2176181A4000E3000516C9 /* Icon-72@2x.png */,
+				5B2176191A4000E3000516C9 /* Icon-Small-50.png */,
+				5B21761A1A4000E3000516C9 /* Icon-Small-50@2x.png */,
+				5B21761B1A4000E3000516C9 /* Icon.png */,
 				5B2175F51A3E5498000516C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,8 +210,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B2176211A4000E3000516C9 /* Icon.png in Resources */,
 				5B2175FC1A3E5498000516C9 /* Main.storyboard in Resources */,
+				5B21761F1A4000E3000516C9 /* Icon-Small-50.png in Resources */,
+				5B2176201A4000E3000516C9 /* Icon-Small-50@2x.png in Resources */,
+				5B21761D1A4000E3000516C9 /* Icon-72.png in Resources */,
+				5B21761E1A4000E3000516C9 /* Icon-72@2x.png in Resources */,
 				5B2176011A3E5498000516C9 /* LaunchScreen.xib in Resources */,
+				5B21761C1A4000E3000516C9 /* Icon-60.png in Resources */,
 				5B2175FE1A3E5498000516C9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
