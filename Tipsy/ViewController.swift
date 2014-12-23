@@ -19,16 +19,26 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        initializeView()
+    }
+    
+    override func viewWillAppear(animated :Bool) {
+        initializeView()
+        billField.becomeFirstResponder()
+    }
+
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func initializeView() {
         tipPercentageSlider.value = Float(getDefaultSatisfactionLevel())
         setPercentLabelText(percentageLabel, value: roundTipPercentage()*100)
         placeEmoji()
         self.view.backgroundColor = UIColor(red: 0.97, green: 0.91, blue: 0.87, alpha: 1)
         billField.becomeFirstResponder()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func onChangeSlider(sender: AnyObject) {

@@ -42,6 +42,7 @@ class SettingsViewController: UIViewController, UIPickerViewDataSource,UIPickerV
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(pickerData[row], forKey: "defaultTip")
+        defaults.synchronize()
     }
     
     @IBAction func backButtonPushed(sender: AnyObject) {
