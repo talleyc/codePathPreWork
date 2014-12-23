@@ -39,6 +39,7 @@ class ViewController: UIViewController {
         placeEmoji()
         self.view.backgroundColor = UIColor(red: 0.97, green: 0.91, blue: 0.87, alpha: 1)
         billField.becomeFirstResponder()
+        onUpdateInput(tipPercentageSlider)
     }
     
     @IBAction func onChangeSlider(sender: AnyObject) {
