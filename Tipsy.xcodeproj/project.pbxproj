@@ -19,6 +19,7 @@
 		5B21761F1A4000E3000516C9 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B2176191A4000E3000516C9 /* Icon-Small-50.png */; };
 		5B2176201A4000E3000516C9 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B21761A1A4000E3000516C9 /* Icon-Small-50@2x.png */; };
 		5B2176211A4000E3000516C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B21761B1A4000E3000516C9 /* Icon.png */; };
+		5B2176241A4205AA000516C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2176231A4205AA000516C9 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5B2176191A4000E3000516C9 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
 		5B21761A1A4000E3000516C9 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
 		5B21761B1A4000E3000516C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5B2176231A4205AA000516C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +91,8 @@
 		5B2175F31A3E5498000516C9 /* Tipsy */ = {
 			isa = PBXGroup;
 			children = (
+				5B2176221A420532000516C9 /* ViewControllers */,
 				5B2175F61A3E5498000516C9 /* AppDelegate.swift */,
-				5B2175F81A3E5498000516C9 /* ViewController.swift */,
 				5B2175FA1A3E5498000516C9 /* Main.storyboard */,
 				5B2175FD1A3E5498000516C9 /* Images.xcassets */,
 				5B2175FF1A3E5498000516C9 /* LaunchScreen.xib */,
@@ -128,6 +130,15 @@
 				5B21760B1A3E5498000516C9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B2176221A420532000516C9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B2175F81A3E5498000516C9 /* ViewController.swift */,
+				5B2176231A4205AA000516C9 /* SettingsViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +249,7 @@
 			files = (
 				5B2175F91A3E5498000516C9 /* ViewController.swift in Sources */,
 				5B2175F71A3E5498000516C9 /* AppDelegate.swift in Sources */,
+				5B2176241A4205AA000516C9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

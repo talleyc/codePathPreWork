@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        emojiField.text = "\u{1F604}"
+        tipPercentageSlider.value = Float(getDefaultSatisfactionLevel())
         setPercentLabelText(percentageLabel, value: roundTipPercentage()*100)
         placeEmoji()
         self.view.backgroundColor = UIColor(red: 0.97, green: 0.91, blue: 0.87, alpha: 1)
@@ -87,6 +87,15 @@ class ViewController: UIViewController {
         var sliderLocation :CGFloat = (sliderRatio * sliderRange)
         var sliderValueToPixels = sliderLocation + sliderOrigin
         return sliderValueToPixels
+    }
+    
+    func getDefaultSatisfactionLevel() -> Int {
+        var defaultTip: NSInteger? = NSUserDefaults.standardUserDefaults().objectForKey("defaultTip") as? NSInteger
+        if defaultTip == nil
+        {
+            defaultTip = NSInteger(18)
+        }
+        return defaultTip!
     }
     
     func placeEmoji(){
